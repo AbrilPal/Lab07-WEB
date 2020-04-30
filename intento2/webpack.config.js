@@ -3,7 +3,7 @@ module.exports =
     mode: "development",
     module: {
         rules: [{
-            test:/\.js$/,
+            test:/\.jsx?$/,
             use: {
                 loader: "babel-loader"
             }
