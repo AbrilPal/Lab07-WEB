@@ -1,12 +1,12 @@
 import React from 'react'
 import {B} from './laberinto.jsx'
 
-const Pared = ({x,y}) =>{
+const Pared2 = ({x,y}) =>{
 
     const style = {
-        width: `${B}px`,
-        height: `${B}px`,
-        background: 'green',
+        width: `8px`,
+        height: `8px`,
+        background: 'pink',
         gridColumnStart: x+1,
         gridRowStart: y+1
     }
@@ -15,4 +15,4 @@ const Pared = ({x,y}) =>{
     )
 }
 
-export default Pared
+export default Pared2
