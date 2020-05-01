@@ -6,7 +6,7 @@ const Pared = ({x,y}) =>{
     const style = {
         width: `${B}px`,
         height: `${B}px`,
-        background: 'red',
+        background: 'blue',
         gridColumnStart: x+1,
         gridRowStart: y+1
     }

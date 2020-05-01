@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Pared from './pared.jsx'
 
-const WIDTH = 10
-const HEIGHT = 10
+const WIDTH = 20
+const HEIGHT = 20
 const B = 10
 
 const Laberinto = () => {
