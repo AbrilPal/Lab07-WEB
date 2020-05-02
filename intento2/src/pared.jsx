@@ -4,8 +4,8 @@ import {B} from './laberinto.jsx'
 const Pared = ({x,y}) =>{
 
     const style = {
-        width: `${B}px`,
-        height: `${B}px`,
+        width: `5px`,
+        height: `5px`,
         background: 'green',
         gridColumnStart: x+1,
         gridRowStart: y+1

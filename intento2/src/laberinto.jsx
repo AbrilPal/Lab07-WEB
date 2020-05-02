@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import Pared from './pared.jsx'
 import Pared2 from './pared2.jsx'
 import Pared3 from './pared3.jsx'
+import Jugador from './jugador.jsx'
+import Meta from './meta.jsx'
 
 const WIDTH = 20
 const HEIGHT = 20
@@ -23,6 +25,8 @@ const Laberinto = () => {
     },[])
 
     const style={
+        marginTop: '100px',
+        marginLeft: '310px',
         width: `${((WIDTH+1)+(WIDTH*2))*B}px`,
         height: `${((HEIGHT+1)+(HEIGHT))*B}px`,
         background: 'black',
@@ -40,6 +44,10 @@ const Laberinto = () => {
                     return <Pared2 key={`${rowIndex}-${columnIndex}`} x={columnIndex} y={rowIndex}/>
                 }else if(column === '|'){
                     return <Pared3 key={`${rowIndex}-${columnIndex}`} x={columnIndex} y={rowIndex}/>
+                }else if(column === 'p'){
+                    return <Jugador key={`${rowIndex}-${columnIndex}`} x={columnIndex} y={rowIndex}/>
+                }else if(column === 'g'){
+                    return <Meta key={`${rowIndex}-${columnIndex}`} x={columnIndex} y={rowIndex}/>
                 }
                 else {
                     return null
